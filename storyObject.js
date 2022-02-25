@@ -35,4 +35,13 @@
       author: "Shane Hedrington",
       Article: "Test Article, test article"
     },
+    {
+      id: 245,
+      headline: "Test Story Headline 254",
+      date: "2/20/2022",
+      imgLink: "images/articles/010922193908.jpg",
+      blurb: "Test Story Blurb",
+      author: "Shane Hedrington",
+      Article: "Test Article, test article"
+    },
   ];
