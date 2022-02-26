@@ -1,4 +1,4 @@
-(function() {
+(function onLoad() {
     let storyList = document.querySelector(".story-list");
     
     var url = document.location.href;
@@ -12,9 +12,19 @@
       return string;
    }
     
-    var id = subStr(url, '=', 'b');
+    var idString = subStr(url, '=', 'b');
     
-    let storyItems = "The index for this article is!" + id;
+    var idNum = parseInt(idString);
+    
+    for (story of storyObjects) {
+        
+        if (story.id == idNum)
+            
+            storyItems = "<h2>" + story.headline + "</h2><h4>" + story.author + "</h4><h5>" + story.date + "</h5><br><img src=" + story.imgLink + "><article>" + story.article + "</article>"
+      
+  }
+
     
     storyList.innerHTML = storyItems;
+    
 })();
