@@ -284,3 +284,54 @@ footer a {color: white;
 footer a:hover {color:#848383;
                 transition: .3s ease;
 }
+
+/*Styles for login pages*/
+#login {
+  width: 900px;
+  margin: 0 auto;
+  background-color: #EB3F3F;
+  padding: 5px;
+  border-radius: 20px;
+  font-size: 20px;
+  margin-top: 100px;
+  }
+  
+  #login p {
+  text-align: center;
+  }
+  
+  #login input {
+  border-radius: 5px;
+  font-size: 20px;
+  }
+  
+  #login form {
+  width:800px;
+  margin: 0 auto;
+  padding: 25px;
+  }
+  
+  #login label {
+  padding: 20px;
+  }
+  
+  #inputButton {
+  width:100px;
+  margin: 0 auto;
+  padding:25px;
+  }
+  
+  #inputButton input{
+  width: 100px;
+  text-align: center;
+  border-radius: 5px;
+  font-size: 20px;
+  }
+
+  #welcome {
+    text-align: right;
+    font-family: open sans;
+    font-size: 125%;
+  }
+  /*End of login styles*/
+  
