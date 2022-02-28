@@ -131,7 +131,7 @@ li {
 .rating > label {
   position: relative;
   width: 1.1em;
-  font-size: 3.5vw;
+  font-size: 2vw;
   color:rgb(160, 153, 50);
   cursor: pointer;
 }
@@ -154,7 +154,28 @@ li {
 .rating:hover > input:checked ~ label:before {
   opacity: 4;
 }
-             
+
+/*Share Buttons*/
+
+.share-btn {
+  display: inline-block;
+  color: #ffffff;
+  border: none;
+  border-radius: 25px;
+  padding: 0.30em 0.2em;
+  outline: none;
+  text-align: center;
+  font-size: 1em;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  margin: 0 0.2em;
+}
+
+.share-btn.twitter     { background: #2e94e2; }
+.share-btn.facebook    { background: #223253; }
+.share-btn.reddit      { background: #b64c18; }
+.share-btn.email       { background: #0c4d17; }
+
+
 /* Footer Code */
              
 footer {background-color:#EB3f3f;
