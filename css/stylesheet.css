@@ -1,8 +1,24 @@
 
 /* Color Codes - Light Grey e6e6e6 blackish 1e1e1e darkgrey 848383 redish EB3f3f */
+
+/* Mobile */
+
+@media (max-width: 400px) {
+  
+  .story-list img { max-width: 75%; }
+
+}
+
 /* Banner Code */
 
 h1 {margin: 0px;
+}
+
+h1 img {
+  height: auto;
+  margin: 3px;
+  max-height: 150px;
+  max-width: 100%;
 }
 
 /* Navigation Code */
@@ -29,20 +45,22 @@ nav a:hover {color:#848383;
              
 /* Articles Code */
 
-.wrapper {
-
-  background-color: white;
-  box-shadow: 10px -10px 10px -10px black;
-  width: 800px;
-  border: 2px black;
+#wrapper {
+  display: flex;
+  max-width: 800px;
   padding: 10px;
-
 }
 
-h2 {/* Article Page Headline */
-
-    font-size: 56px;
+.story-list {
+  padding-left: 5px;
 }
+
+/* Article Submission */
+
+form {
+  padding: 5px;
+}
+
 
 h4 { /* Author */
 
@@ -65,10 +83,6 @@ article {
 
     a {text-decoration: none;
     color: black;
-}
-
-div {
-  margin: 20px;
 }
 
 ul {
@@ -97,11 +111,6 @@ li {
   border-bottom: 1px black solid;
 }
 
-img {
-  max-width: 500px;
-  margin: 10px;
-  border-radius: 5px;
-}
 
 /* Star Rating System*/
  .p1 {
@@ -163,137 +172,17 @@ footer a {color: white;
 footer a:hover {color:#848383;
                 transition: .3s ease;
 }
-/* Color Codes - Light Grey e6e6e6 blackish 1e1e1e darkgrey 848383 redish EB3f3f */
-/* Banner Code */
 
-h1 {margin: 0px;
-}
-
-/* Navigation Code */
-
-nav {background-color:#EB3F3F;
-    font-family: open sans;
-    margin: 0px;
-    text-align: right;
-    font-size: 125%;
-    padding: 5px;
-    padding-right: 15px;
-    text-decoration: none;
-    border-bottom-color: black;
-    border-bottom-width: 3;
-}
- 
-nav a {color: white;
-       text-decoration: none;
-}
-  
-nav a:hover {color:#848383;
-             transition: .3s ease;
-}
-             
-/* Articles Code */
-
-.wrapper {
-
-  background-color: white;
-  box-shadow: 10px -10px 10px -10px black;
-  width: 800px;
-  border: 2px black;
-  padding: 10px;
-
-}
-
-h2 {/* Article Page Headline */
-
-    font-size: 56px;
-}
-
-h4 { /* Author */
-
-  font-size: 12px;
-  font-style: italic;
-}
-
-h5{/* Date */
-
-  font-size: 12px;
-  font-style: italic;
-  border-bottom: 1px solid black;
-}
-
-article {
-  margin-top: 10px;
-}
-
-* {margin: 0; padding: 0;}
-
-    a {text-decoration: none;
-    color: black;
-}
-
-div {
-  margin: 20px;
-}
-
-ul {
-  list-style-type: none;
-  width: 700px;
-}
-
-h3 {
-  font: bold 20px/1.5 Helvetica, Verdana, sans-serif;
-}
-
-li img {
-  float: left;
-  margin: 0 15px 0 0;
-  max-width: 200px;
-  border-radius: 15px
-}
-
-li p {
-  font: 200 12px/1.5 Georgia, Times New Roman, serif;
-}
-
-li {
-  padding: 10px;
-  overflow: auto;
-  border-bottom: 1px black solid;
-}
-
-img {
-  max-width: 500px;
-  margin: 10px;
-  border-radius: 5px;
-}
-             
-/* Footer Code */
-             
-footer {background-color:#EB3f3f;
-        color: #000000;
-        font-size: 80%;
-        padding: 5px;
-        text-align: left;
-        margin: 0px;
-}     
-        
-footer a {color: white;
-          text-decoration: none;
-}
-       
-footer a:hover {color:#848383;
-                transition: .3s ease;
-}
 
 /*Styles for login pages*/
 #login {
-  width: 900px;
+  max-width: 900px;
   margin: 0 auto;
   background-color: #EB3F3F;
   padding: 5px;
   border-radius: 20px;
   font-size: 20px;
-  margin-top: 100px;
+  margin-top: 10px;
   }
   
   #login p {
@@ -306,9 +195,9 @@ footer a:hover {color:#848383;
   }
   
   #login form {
-  width:800px;
+  max-width:800px;
   margin: 0 auto;
-  padding: 25px;
+  padding: 5px;
   }
   
   #login label {
