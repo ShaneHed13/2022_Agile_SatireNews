@@ -20,7 +20,11 @@
         </div>
 
         <nav> 
-            <input id="searchbar" onkeyup="search_story()" type="text" name="search" placeholder="Search">
+            <label for="sort">Sort By:</label>
+            <select name="sort" id="sort" onclick="sort_story()">
+                <option value="date">Date</option>
+            </select>&nbsp;
+            <input id="searchbar" onkeyup="search_story()" type="text" name="search" placeholder="Search">&nbsp;
             <a href="index.html">News</a>&nbsp; &bull;
             <a href="articleForm.html">Add Article</a>&nbsp; &bull;
             <a href="login.html">Member Login</a>
@@ -44,6 +48,7 @@
     
         <script src="index.js"></script>
         <script src="search.js"></script>
+        <script src="sort.js"></script>    
     
     </body>
     
