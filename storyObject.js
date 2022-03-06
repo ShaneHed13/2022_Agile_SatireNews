@@ -46,9 +46,9 @@
     },
         {
       id: 248,
-      headline: "Sean Penn recounts startline experience at Ukraine/Poland border",
+      headline: "Sean Penn recounts startling experience at Ukraine/Poland border",
       date: "2/17/2022",
-      imgLink: "images/articles/seanPenn.jpg",
+      imgLink: "images/articles/seanpenn.jpg",
       blurb: "Penn later found out he was taken to the United States/Mexico Border",
       author: "Shane Hedrington",
       article: "Sean Penn Article"
