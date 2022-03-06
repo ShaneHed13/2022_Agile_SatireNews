@@ -1,0 +1,59 @@
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RFN</title>
+    <link rel="stylesheet" href="css/stylesheet.css">
+</head>
+
+    <body style="background-color:#E6E6E3" onload="welcome()">
+
+        <h1>
+            <img src="images/RFNlogo.png" alt="RFN">
+        </h1>
+
+        <nav>          
+            <a href="index.html">News</a>&nbsp; &bull;
+            <a href="login.html">Member Login</a>&nbsp; &bull;
+            <a href="addArticle.html">Add Article</a>
+        </nav>
+
+
+        <div id="wrapperadd">
+
+            <h1>Article Submission:</h1>
+
+            <form id="formSubmit" method="post">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email"/>
+                <label for="headline">Headline:</label>
+                <input type="text" id="headline" name="headline"/>
+                <label for="date">Date:</label>
+                <input type="date" id="date" name="date"/>
+                <label for="imageUpload">Image:</label>
+                <input type="file" id="imageUpload"/>
+                <label for="blurb">Body:</label>
+                <textarea name="blurb" id="blurb" cols="20" rows="10"></textarea>
+                <label for="author">Author:</label>
+                <input type="text" id="author" name="author"/>
+                <label for="article">Article:</label>
+                <input type="text" id="article" name="article"/>
+            </form>
+            <div id="addbtn">
+            <input id="btn_add" type="button" value="Submit" onclick="send()"/>
+            </div>
+            <div id="submit">
+                <p id="submitted"></p>
+              </div>
+        </div>
+
+        <footer>
+            <a href="index.html">News</a>&nbsp; &bull;
+            <a href="login.html">Member Login</a>&nbsp; &bull;
+            <a href="addArticle.html">Add Article</a>
+        </footer>
+        <script src="submission.js"></script>
+    </body>
+    
+</html>

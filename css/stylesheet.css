@@ -204,6 +204,8 @@ footer a:hover {color:#848383;
   border-radius: 20px;
   font-size: 20px;
   margin-top: 10px;
+  margin-bottom: 25px;
+  margin-top: 25px;
   }
   
   #login p {
@@ -245,3 +247,96 @@ footer a:hover {color:#848383;
   }
   /*End of login styles*/
   
+  /*Submission form styles*/
+  #formSubmit {
+    display: grid;
+    padding: 25px;
+    
+  }
+
+  #formSubmit input {
+    width: 600px;
+    padding: 10px;
+    display: inline-block;
+    border-radius: 10px;
+  }
+
+  #formSubmit label {
+    margin-right: 25px;
+    padding: 10px;
+    font-size: 25px;
+  }
+
+  #addbtn input{
+    width: 250px;
+    height: 50px;
+    margin-left: 25px;
+    margin-bottom: 25px;
+    border-radius: 10px;
+    background-color: #EB3F3F;
+    font-size: 20px;
+  }
+
+  #formSubmit textarea {
+    width: 600px;
+    border-radius: 10px;
+    padding: 5px;
+  }
+
+  #wrapperadd {
+    margin-left: 50px;
+    margin-top: 25px;
+  }
+
+  #wrapperadd h1 {
+    font-size: 40px;
+    font-family: open sans;
+    margin-left:25px;
+  }
+  
+  #submit {
+    margin-left: 25px;
+    font-size: 25px;
+    margin-bottom: 25px;
+  }
+  /*End of submission form styles*/
+
+  /* Styles for Donation Page*/
+
+  #donoAmountMonthly {
+  background-color: rgb(255, 103, 103);
+  border: 1px solid black;
+  width: 300px;
+  padding: 20px;
+  font-weight: bold;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+
+  #donoAmountOnce {
+  background-color: rgb(255, 103, 103);
+  border: 1px solid black;
+  width: 300px;
+  padding: 20px;
+  font-weight: bold;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+
+
+  #contactInfo {
+    padding: 10px;
+    width: 500px;
+  }
+
+  #address {
+    padding: 10px;
+  }
+
+  #card {
+    padding: 10px;
+  }
+
+  #donateSubmit {
+    padding: 10px;
+    background-color: #b4fcf8;
+  }
+  /* End Donation Page Styles */
