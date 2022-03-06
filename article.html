@@ -22,8 +22,8 @@
         </nav>
 
         <div class="story-list">
-
         </div>
+        <br>
 
         <p class="p1">Rate this article:</p>
 
@@ -39,14 +39,26 @@
             <input type ="radio" name="rating" value="1" id="1">
             <label for="1">☆</label>
         </div>
+        <br>
 
         <!--Share Buttons-->
         <a href="mailto:?subject=Article Title Place Holder&body=https://shanehed13.github.io/2022_Agile_SatireNews/article.html" class="share-btn email">Email</a>
         <a href="https://www.facebook.com/sharer.php?u=https%3A%2F%2Fshanehed13.github.io%2F2022_Agile_SatireNews%2Farticle.html" class="share-btn facebook">Facebook</a>  
         <a href="https://reddit.com/submit?url=https://shanehed13.github.io/2022_Agile_SatireNews/article.html&title=Article Title Place Holder" class="share-btn reddit">Reddit</a>
-        <a href="https://twitter.com/share?url=https://shanehed13.github.io/2022_Agile_SatireNews/article.html&text=Article Title Place Holder" class="share-btn twitter">Twitter</a>
+        <a href="https://twitter.com/share?url=https://shanehed13.github.io/2022_Agile_SatireNews/article.html&text=Article Title Place Holder" class="share-btn twitter">Twitter</a><br>
+        <br>
+        <h3>Comments</h3>
 
+        <form>
+            <label for="name">Name: </label>
+            <input type="text" name="name" id="name" style="width: 6em;">
+            <label for="comments">Comment: </label>
+            <input type="text" name="comments" id="comment">
+            <input type="submit" id="submitComment" value="Submit" onclick="SubmitComment()"> 
+        </form>
+        
         <div>
+            <p id="comments"></p>
         </div>
   
         <footer>
@@ -55,7 +67,7 @@
         </footer>
     
         <script src="article.js"></script>
-
+        <script src="comment.js"></script>
     </body>
     
 </html>

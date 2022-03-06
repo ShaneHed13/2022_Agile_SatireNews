@@ -175,6 +175,19 @@ li {
 .share-btn.reddit      { background: #b64c18; }
 .share-btn.email       { background: #0c4d17; }
 
+/* Comments Style */
+
+#comments {
+  background-color: #fffffe;
+  border-radius: 3px;
+  box-shadow: 2px 2px 2px black;
+  margin: 0 5px 5px 5px;
+}
+
+#submitComment {
+  padding: 2px;
+}
+
 
 /* Footer Code */
              
