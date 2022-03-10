@@ -58,6 +58,23 @@
             <input type="text" name="comments" id="comment">
             <input type="submit" id="submitComment" value="Submit" onclick="SubmitComment()"> 
         </form>
+		
+		<br>
+		<h3>Contact author</h3>
+		<form>
+			<label for="name">Name:</label>
+			<input type="text" name="name" id="nameMsg" style="width: 6em;">
+			<label for="email">Email:</label>
+			<input type="email" name="emailMsg" id="emailMsg">
+			<br>
+			<label for="message">Message:</label>
+			<br>
+			<textarea name="message" id="messageMsg" cols="46" rows="8" style="padding: 5px;"></textarea>
+			<br>
+			<input type="submit" id="submitMsg" value="Send" onclick="sendMessage()">
+			<br>
+			<p id="messageSubmit"></p>
+		</form>
         
         <div>
             <p id="comments"></p>
