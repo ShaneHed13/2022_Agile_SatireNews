@@ -50,3 +50,23 @@ function welcome() {
     }
 
 }
+
+function sub() {
+	//Variable set to correct email format
+	var mailCheck = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+		
+	//Checks input to see if it matches format	
+	if(document.getElementById("subInput").value.match(mailCheck))
+	{
+		
+		document.getElementById("subInput").value = "";
+		alert("Thank you for subscribing!");
+		return true;
+	}
+	else
+	{
+		alert("Invalid email. Correct format: example@example.com");  
+		return false;
+	}
+		
+}	

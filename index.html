@@ -19,12 +19,15 @@
           <p id="loginSuccess"></p>
         </div>
 
-        <nav> 
+        <nav>
+			<label for="subscribe">Subscribe For Updates:</label>
+			<input for="subscribe" type="text" name="subscribe" id="subInput" placeholder="Subscription Email">
+			<button type="button" id="sub" onclick="sub()">Subscribe</button>&nbsp; &bull;
             <label for="sort">Sort By:</label>
             <select name="sort" id="sort" onclick="sort_story()">
                 <option value="date">Date</option>
             </select>&nbsp;
-            <input id="searchbar" onkeyup="search_story()" type="text" name="search" placeholder="Search">&nbsp;
+            <input id="searchbar" onkeyup="search_story()" type="text" name="search" placeholder="Search">&nbsp; &bull;
             <a href="index.html">News</a>&nbsp; &bull;
             <a href="login.html">Member Login</a>&nbsp; &bull;
             <a href="addArticle.html">Add Article</a>&nbsp; &bull;
