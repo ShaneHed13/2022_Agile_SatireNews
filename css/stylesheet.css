@@ -4,40 +4,41 @@
 /* Mobile */
 
 @media (max-width: 400px) {
-  
-  .story-list img { max-width: 75%; }
- 
+  .story-list img { 
+    max-width: 75%; 
+  } 
 }	
 
 /* Media styles for login when page is less than 800px*/
 @media (max-width: 800px) {
   #login input {
-  border-radius: 5px;
-  font-size: 20px;
-  width: 95%;
-  display: inline-block;
-  margin-right: 10px;
+    border-radius: 5px;
+    font-size: 20px;
+    width: 95%;
+    display: inline-block;
+    margin-right: 10px;
   
   }
   
   #login form {
-	display: inline-block;
+	  display: inline-block;
   }
   
   #login label {
-	padding-top: 10px;
-	display: block;
+    padding-top: 10px;
+    display: block;
   }
   
   #login {
-	width: 100%;
+	  width: 100%;
   }
   
 }
 
 /* Banner Code */
 
-h1 {margin: 0px;
+h1 {
+  margin: 0px;
 }
 
 h1 img {
@@ -49,24 +50,27 @@ h1 img {
 
 /* Navigation Code */
 
-nav {background-color:#EB3F3F;
-    font-family: open sans;
-    margin: 0px;
-    text-align: right;
-    font-size: 125%;
-    padding: 5px;
-    padding-right: 15px;
-    text-decoration: none;
-    border-bottom-color: black;
-    border-bottom-width: 3;
+nav {
+  background-color:#EB3F3F;
+  font-family: open sans;
+  margin: 0px;
+  text-align: right;
+  font-size: 125%;
+  padding: 5px;
+  padding-right: 15px;
+  text-decoration: none;
+  border-bottom-color: black;
+  border-bottom-width: 3;
 }
  
-nav a {color: white;
-       text-decoration: none;
+nav a {
+  color: white;
+  text-decoration: none;
 }
   
-nav a:hover {color:#848383;
-             transition: .3s ease;
+nav a:hover {
+  color:#848383;
+  transition: .3s ease;
 }
              
 /* Articles Code */
@@ -87,15 +91,14 @@ form {
   padding: 5px;
 }
 
-
-h4 { /* Author */
-
+/* Author */
+h4 { 
   font-size: 12px;
   font-style: italic;
 }
 
-h5{/* Date */
-
+/* Date */
+h5 {
   font-size: 12px;
   font-style: italic;
   border-bottom: 1px solid black;
@@ -105,10 +108,13 @@ article {
   margin-top: 10px;
 }
 
-* {margin: 0; padding: 0;}
+* {
+  margin: 0; padding: 0;
+}
 
-    a {text-decoration: none;
-    color: black;
+a {
+  text-decoration: none;
+  color: black;
 }
 
 ul {
@@ -124,7 +130,7 @@ li img {
   float: left;
   margin: 0 15px 0 0;
   max-width: 200px;
-  border-radius: 15px
+  border-radius: 15px;
 }
 
 li p {
@@ -217,25 +223,28 @@ li {
 
 /* Footer Code */
              
-footer {background-color:#EB3f3f;
-        color: #000000;
-        font-size: 80%;
-        padding: 5px;
-        text-align: left;
-        margin: 0px;
+footer {
+  background-color:#EB3f3f;
+  color: #000000;
+  font-size: 80%;
+  padding: 5px;
+  text-align: left;
+  margin: 0px;
 }     
         
-footer a {color: white;
-          text-decoration: none;
+footer a {
+  color: white;
+  text-decoration: none;
 }
        
-footer a:hover {color:#848383;
-                transition: .3s ease;
+footer a:hover {
+  color:#848383;
+  transition: .3s ease;
 }
 
 
 /*Styles for login pages*/
-#login {
+#loginDiv {
   max-width: 900px;
   margin: 0 auto;
   background-color: #EB3F3F;
@@ -247,36 +256,36 @@ footer a:hover {color:#848383;
   margin-top: 25px;
   }
   
-  #login p {
-  text-align: center;
+  #loginDiv p {
+    text-align: center;
   }
   
-  #login input {
-  border-radius: 5px;
-  font-size: 20px;
+  #loginForm input {
+    border-radius: 5px;
+    font-size: 20px;
   }
   
-  #login form {
-  max-width:800px;
-  margin: 0 auto;
-  padding: 5px;
+  #loginForm {
+    max-width:800px;
+    margin: 0 auto;
+    padding: 5px;
   }
   
-  #login label {
-  padding: 20px;
+  #loginForm label {
+    padding: 20px;
   }
   
   #inputButton {
-  width:100px;
-  margin: 0 auto;
-  padding:25px;
+    width:100px;
+    margin: 0 auto;
+    padding:25px;
   }
   
   #inputButton input{
-  width: 100px;
-  text-align: center;
-  border-radius: 5px;
-  font-size: 20px;
+    width: 100px;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 20px;
   }
 
   #welcome {
@@ -343,21 +352,21 @@ footer a:hover {color:#848383;
   /* Styles for Donation Page*/
 
   #donoAmountMonthly {
-  background-color: rgb(255, 103, 103);
-  border: 1px solid black;
-  width: 300px;
-  padding: 20px;
-  font-weight: bold;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: rgb(255, 103, 103);
+    border: 1px solid black;
+    width: 300px;
+    padding: 20px;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   }
 
   #donoAmountOnce {
-  background-color: rgb(255, 103, 103);
-  border: 1px solid black;
-  width: 300px;
-  padding: 20px;
-  font-weight: bold;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: rgb(255, 103, 103);
+    border: 1px solid black;
+    width: 300px;
+    padding: 20px;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   }
 
 

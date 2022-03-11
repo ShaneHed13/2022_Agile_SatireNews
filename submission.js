@@ -8,7 +8,7 @@ function send() {
     var author = document.getElementById("author");
     var article = document.getElementById("article");
     
-    if (email.value == "" || headline.value == "" || date.value == "" || blurb.value == "" || author.value == "" || article.value == "") {
+    if (email.value === "" || headline.value === "" || date.value === "" || blurb.value === "" || author.value === "" || article.value === "") {
         alert("Enter values for the all fields. Attach image if needed.");
     } else {
         var form = document.getElementById("formSubmit");

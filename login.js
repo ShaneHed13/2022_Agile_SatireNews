@@ -8,7 +8,7 @@ var regPass = document.getElementById('regPass');
 //Store login information gathered by the user
 function register() {
 
-    if(regName.value == "" || regPass.value == "") {
+    if(regName.value === "" || regPass.value === "") {
         alert('Please enter values for Username and Password');
     } else {
         localStorage.setItem('regName', regName.value);
@@ -31,7 +31,7 @@ function login() {
     var userPass = document.getElementById('pass');
 
 //Checking login information to see if it matches stored user
-    if(userName.value != storedUser || userPass.value != storedPass) {
+    if(userName.value !== storedUser || userPass.value !== storedPass) {
         alert('User not found. Please try again.');
     }else {
         window.location.href = "index.html";
@@ -43,7 +43,7 @@ function welcome() {
     var welcomeUser = localStorage.getItem('regName');
 
 
-    if (welcomeUser.value == "") {
+    if (welcomeUser.value === "") {
         document.getElementById("loginSuccess").innerHTML="No user";
     } else {
         document.getElementById("loginSuccess").innerHTML="Welcome, " + welcomeUser +".";
