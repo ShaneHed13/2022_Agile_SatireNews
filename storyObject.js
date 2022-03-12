@@ -53,4 +53,13 @@
       author: "Shane Hedrington",
       article: "Sean Penn Article"
     },
+              {
+      id: 243,
+      headline: "Gandalf refused to provide eagles to the hobbits in fear it would escalate the war with Sauron",
+      date: "3/12/2022",
+      imgLink: "images/articles/gandalf.jpg",
+      blurb: "Gandalf later regretted allowing Sauron to acheive air superiority, noting it made the Hobbit's journey almost impossible",
+      author: "Shane Hedrington",
+      article: "Gandalf article"
+    },
   ];
