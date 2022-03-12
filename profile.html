@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width='device-width', initial-scale=1.0">
+  <title>RNF</title>
+  <link rel="stylesheet" href="css/stylesheet.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+</head>
+
+<body style="background-color:#E6E6E3" > <!--onload="welcome()"-->
+
+  <h1>
+    <img src="images/RFNlogo.png" alt="RFN">
+  </h1>
+
+  <nav> 
+    <input id="searchbar" onkeyup="search_story()" type="text" name="search" placeholder="Search">
+    <a href="index.html">News</a>&nbsp; &bull;
+    <a href="login.html">Member Login</a>&nbsp; &bull;
+    <a href="addArticle.html">Add Article</a>&nbsp; &bull;
+    <a href="donate.html">Donate</a>&nbsp; &bull;
+    <a href="profile.html">Profile</a>
+  </nav>
+
+  <h1>Create a new Profile:</h1>
+
+  <div id="usernameInfo">
+    <p>Basic information:</p><br>
+    <form id="aboutMe" method="post">
+      <label for="username">Username:</label><br>
+      <input type="text" id="username" name="username"/><br>
+      <label for="email">Email:</label><br>
+      <input type="email" id="email" name="email"/><br>
+      
+      <div id="imageContainer">
+        <label for="profile">Profile Image:</label><br>
+        <image id="defaultImage" src="https://shanehed13.github.io/2022_Agile_SatireNews/images/defaultProfilePic.png"></image>
+        <input id="imageProfile" type="file" name="image_picture" required="" capture>
+      </div>
+      <label for="password">New Password:</label><br>
+      <input type="password" id="password" name="password"/><br>
+      <label for="cpassword">Confirm Password:</label><br>
+      <input type="password" id="cpassword" name="cpassword"/><br>
+    </form>
+  </div>
+
+  <div id="basicDetails">
+    <p>More About Me:</p>
+    <form id="profileDetails" method="post">
+      <label for="firstName">First Name:</label><br>
+      <input type="text" id="firstName" name="firstName"/><br>
+      <label for="lastName">Last Name:</label><br>
+      <input type="text" id="lastName" name="lastName"/><br>
+      <label for="occupation">Occupation:</label><br>
+      <input type="text" id="occupation" name="occupation"/><br>
+      <label for="city">Current City:</label><br>
+      <input type="text" id="city" name="city"/><br>
+      <label for="profileAboutMe">My Bio:</label><br>
+      <textarea name="profileAboutMe" id="profileAboutMe" cols="20" rows="15"></textarea>
+    </form>
+  </div>
+
+  <div id="profileSubmitButton">
+    <input type="submit" id="profileSubmit" value="Submit" onclick="submitThanks()">
+    <p id="formSubmitted"></p>
+  </div>
+</body>
+
+<script src="profile.js"></script>
+</html>
