@@ -17,24 +17,24 @@
             <img src="images/RFNlogo.png" alt="RFN">
         </h1>
 
-        <div id="welcome">
-          <p id="loginSuccess"></p>
-        </div>
-
         <nav>
-			<label for="subscribe">Subscribe For Updates:</label>
-			<input for="subscribe" type="text" name="subscribe" id="subInput" placeholder="Subscription Email">
-			<button type="button" id="sub" onclick="sub()">Subscribe</button>&nbsp; &bull;
+            <a href="index.html">Home</a>&nbsp;&bull;&nbsp;
+            <a href="addArticle.html">Add Article</a>&nbsp;&bull;&nbsp;
+            <a href="donate.html">Donate</a>&nbsp;&bull;&nbsp;
+            <a href="login.html">Member Login</a>&nbsp;&bull;&nbsp;
+            <span id="loginSuccess"></span>
+        </nav>
+
+        <div id="options">
             <label for="sort">Sort By:</label>
             <select name="sort" id="sort" onclick="sort_story()">
                 <option value="date">Date</option>
-            </select>&nbsp;
-            <input id="searchbar" onkeyup="search_story()" type="text" name="search" placeholder="Search">&nbsp; &bull;
-            <a href="index.html">News</a>&nbsp; &bull;
-            <a href="login.html">Member Login</a>&nbsp; &bull;
-            <a href="addArticle.html">Add Article</a>&nbsp; &bull;
-            <a href="donate.html">Donate</a>
-        </nav>
+            </select>&nbsp; &bull; &nbsp;
+            <input id="searchbar" onkeyup="search_story()" type="text" name="search" placeholder="Search">&nbsp; &bull; &nbsp;
+            <label for="subscribe">Subscribe For Updates:</label>
+			<input for="subscribe" type="text" name="subscribe" id="subInput" placeholder="Subscription Email">
+			<button type="button" id="sub" onclick="sub()">Subscribe</button>&nbsp;   
+        </div>
         
         <div id="advertisement">Advertisement Block</div>
 
@@ -48,10 +48,10 @@
         </div>
 
         <footer>
-            <a href="index.html">News</a>&nbsp; &bull;
-            <a href="login.html">Member Login</a>&nbsp; &bull;
+            <a href="index.html">Home</a>&nbsp; &bull;
             <a href="addArticle.html">Add Article</a>&nbsp; &bull;
-            <a href="donate.html">Donate</a>
+            <a href="donate.html">Donate</a>&nbsp; &bull;
+            <a href="login.html">Member Login</a>&nbsp;
         </footer>
     
     <script src="index.js"></script>

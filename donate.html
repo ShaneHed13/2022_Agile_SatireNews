@@ -14,14 +14,15 @@
   <img src="images/RFNlogo.png" alt="RFN">
 </h1>
 
-<nav> 
-  <input id="searchbar" onkeyup="search_story()" type="text" name="search" placeholder="Search">
-  <a href="index.html">News</a>&nbsp; &bull;
-  <a href="login.html">Member Login</a>&nbsp; &bull;
-  <a href="addArticle.html">Add Article</a>&nbsp; &bull;
-  <a href="donate.html">Donate</a>&nbsp; &bull;
+<nav>
+  <a href="index.html">Home</a>&nbsp;&bull;&nbsp;
+  <a href="addArticle.html">Add Article</a>&nbsp;&bull;&nbsp;
+  <a href="donate.html">Donate</a>&nbsp;&bull;&nbsp;
+  <a href="login.html">Member Login</a>&nbsp;&bull;&nbsp;
   <a href="profile.html">Profile</a>
 </nav>
+
+<div id="wrapper">
 
 <div id="donoAmountMonthly">
   <p>Donate each month:</p><br>
@@ -42,77 +43,79 @@
   
 </div>
 
-<div id="donoAmountOnce">
-  <p>Donate one time:</p><br>
-  <input type="checkbox" name="once" id="odollar_one" value="dono7">
-  <label for="odollar_one">$1</label>
-  <input type="checkbox" name="once" id="odollar_five" value="dono8">
-  <label for="odollar_five">$5</label>
-  <input type="checkbox" name="once" id="odollar_ten" value="dono9">
-  <label for="odollar_ten">$10</label>
-  <input type="checkbox" name="once" id="odollar_twenty" value="dono10">
-  <label for="odollar_twenty">$20</label>
-  <input type="checkbox" name="once" id="odollar_fifty" value="dono11">
-  <label for="odollar_fifty">$50</label>
-  <input type="checkbox" name="once" id="odollar_hundred" value="dono12">
-  <label for="odollar_hundred">$100</label><br>
-  <label for="onceCustom">Custom Amount:</label><br>
-  <input type="text" id="onceCustom"><br>
-  
+  <div id="donoAmountOnce">
+    <p>Donate one time:</p><br>
+    <input type="checkbox" name="once" id="odollar_one" value="dono7">
+    <label for="odollar_one">$1</label>
+    <input type="checkbox" name="once" id="odollar_five" value="dono8">
+    <label for="odollar_five">$5</label>
+    <input type="checkbox" name="once" id="odollar_ten" value="dono9">
+    <label for="odollar_ten">$10</label>
+    <input type="checkbox" name="once" id="odollar_twenty" value="dono10">
+    <label for="odollar_twenty">$20</label>
+    <input type="checkbox" name="once" id="odollar_fifty" value="dono11">
+    <label for="odollar_fifty">$50</label>
+    <input type="checkbox" name="once" id="odollar_hundred" value="dono12">
+    <label for="odollar_hundred">$100</label><br>
+    <label for="onceCustom">Custom Amount:</label><br>
+    <input type="text" id="onceCustom"><br>
+    
+  </div>
+
+  <div id="contactInfo">
+    <p>Contact Information:</p><br>
+
+    <label for="name">First Name:</label><br>
+    <input type="text" id="name" name="name"><br>
+
+    <label for="lname">Last Name:</label><br>
+    <input type="text" id="lname" name="lname"><br>
+
+    <label for="email">Email</label><br>
+    <input type="email" id="email" name="email"><br>
+  </div>
+
+  <div id="address">
+    <p>Address:</p><br>
+
+    <label for="street">Street:</label><br>
+    <input type="text" id="street" name="street"><br>
+
+    <label for="aptnumber">Apartment Number:</label><br>
+    <input type="text" id="aptnumber" name="aptnumber"><br>
+
+    <label for="city">City:</label><br>
+    <input type="text" id="city" name="city"><br>
+
+    <label for="state">State:</label><br>
+    <input type="text" id="state" name="state"><br>
+
+    <label for="zip">ZIP code:</label><br>
+    <input type="text" id="zip" name="zip">
+  </div>
+
+  <div id="card">
+    <p>Card Information:</p><br>
+
+    <label for="cnumber">Card Number:</label><br>
+    <input type="text" id="cnumber" name="cnumber"><br>
+
+    <label for="cdate">Experation Date:</label><br>
+    <input type="date" id="cdate" name="cdate"><br>
+
+    <label for="ccv">CCV:</label><br>
+    <input type="text" id="ccv" name="ccv">
+  </div>
+
+  <input type="submit" id="donateSubmit" value="Submit">
+
 </div>
-
-<div id="contactInfo">
-  <p>Contact Information:</p><br>
-
-  <label for="name">First Name:</label><br>
-  <input type="text" id="name" name="name"><br>
-
-  <label for="lname">Last Name:</label><br>
-  <input type="text" id="lname" name="lname"><br>
-
-  <label for="email">Email</label><br>
-  <input type="email" id="email" name="email"><br>
-</div>
-
-<div id="address">
-  <p>Address:</p><br>
-
-  <label for="street">Street:</label><br>
-  <input type="text" id="street" name="street"><br>
-
-  <label for="aptnumber">Apartment Number:</label><br>
-  <input type="text" id="aptnumber" name="aptnumber"><br>
-
-  <label for="city">City:</label><br>
-  <input type="text" id="city" name="city"><br>
-
-  <label for="state">State:</label><br>
-  <input type="text" id="state" name="state"><br>
-
-  <label for="zip">ZIP code:</label><br>
-  <input type="text" id="zip" name="zip">
-</div>
-
-<div id="card">
-  <p>Card Information:</p><br>
-
-  <label for="cnumber">Card Number:</label><br>
-  <input type="text" id="cnumber" name="cnumber"><br>
-
-  <label for="cdate">Experation Date:</label><br>
-  <input type="date" id="cdate" name="cdate"><br>
-
-  <label for="ccv">CCV:</label><br>
-  <input type="text" id="ccv" name="ccv">
-</div>
-
-<input type="submit" id="donateSubmit" value="Submit">
 
 <footer>
-  <a href="index.html">News</a>&nbsp; &bull;
-  <a href="login.html">Member Login</a>&nbsp; &bull;
+  <a href="index.html">Home</a>&nbsp; &bull;
   <a href="addArticle.html">Add Article</a>&nbsp; &bull;
-  <a href="donate.html">Donate</a>
+  <a href="donate.html">Donate</a>&nbsp; &bull;
+  <a href="login.html">Member Login</a>&nbsp;
 </footer>
 
 <script src="donate.js"></script>

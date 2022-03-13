@@ -2,13 +2,6 @@
 /* Color Codes - Light Grey e6e6e6 blackish 1e1e1e darkgrey 848383 redish EB3f3f */
 
 /* Mobile */
-
-@media (max-width: 400px) {
-  .story-list img { 
-    max-width: 75%; 
-  } 
-}	
-
 /* Media styles for login when page is less than 800px*/
 @media (max-width: 800px) {
   #login input {
@@ -17,7 +10,6 @@
     width: 95%;
     display: inline-block;
     margin-right: 10px;
-  
   }
   
   #login form {
@@ -40,10 +32,10 @@
     position: -webkit-sticky;
     position: sticky;
     top: 0;
-    width: 600px;
-    height: 50px;
+    max-width: 600px;
+    max-height: 50px;
     background-color: #EB3f3f;
-    margin: 25px;
+    margin: 5px auto;
     padding: 40px;
     font-size: 25px;
 }
@@ -51,7 +43,8 @@
 /* Banner Code */
 
 h1 {
-  margin: 0px;
+  margin: auto;
+  max-width: 800px;
 }
 
 h1 img {
@@ -65,33 +58,40 @@ h1 img {
 
 nav {
   background-color:#EB3F3F;
+  border-radius: 3px 3px 0 0;
   font-family: open sans;
-  margin: 0px;
-  text-align: right;
+  margin: auto;
+  max-width: 800px;
+  text-align: center;
   font-size: 125%;
   padding: 5px;
-  padding-right: 15px;
   text-decoration: none;
-  border-bottom-color: black;
-  border-bottom-width: 3;
 }
  
 nav a {
   color: white;
-  text-decoration: none;
 }
   
 nav a:hover {
   color:#848383;
   transition: .3s ease;
 }
+
+#options {
+  background-color: #FF6666;
+  margin: auto;
+  max-width: 800px;
+  padding: 5px;
+  text-align: center;
+}
              
 /* Articles Code */
 
 #wrapper {
-  display: flex;
+  background-color: whitesmoke;
+  margin: auto;
   max-width: 800px;
-  padding: 10px;
+  padding: 5px;
 }
 
 .story-list {
@@ -132,7 +132,7 @@ a {
 
 ul {
   list-style-type: none;
-  width: 700px;
+  max-width: 700px;
 }
 
 h3 {
@@ -167,6 +167,7 @@ li {
   display: flex;
   flex-direction: row-reverse;
   justify-content: left;
+  margin: auto;
 }
 
 .rating > input {
@@ -212,7 +213,7 @@ li {
   text-align: center;
   font-size: 1em;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  margin: 0 0.2em;
+  margin: auto;
 }
 
 .share-btn.twitter     { background: #2e94e2; }
@@ -223,10 +224,10 @@ li {
 /* Comments Style */
 
 #comments {
-  background-color: #fffffe;
+  background-color: #e6e6e6;
   border-radius: 3px;
   box-shadow: 2px 2px 2px black;
-  margin: 0 5px 5px 5px;
+  margin: auto;
 }
 
 #submitComment {
@@ -238,11 +239,13 @@ li {
              
 footer {
   background-color:#EB3f3f;
+  border-radius: 0 0 3px 3px;
   color: #000000;
   font-size: 80%;
   padding: 5px;
-  text-align: left;
-  margin: 0px;
+  text-align: center;
+  margin: auto;
+  max-width: 800px;
 }     
         
 footer a {
@@ -258,7 +261,7 @@ footer a:hover {
 
 /*Styles for login pages*/
 #loginDiv {
-  max-width: 900px;
+  max-width: 800px;
   margin: 0 auto;
   background-color: #EB3F3F;
   padding: 5px;
@@ -316,7 +319,7 @@ footer a:hover {
   }
 
   #formSubmit input {
-    width: 600px;
+    max-width: 600px;
     padding: 10px;
     display: inline-block;
     border-radius: 10px;
@@ -339,14 +342,14 @@ footer a:hover {
   }
 
   #formSubmit textarea {
-    width: 600px;
+    max-width: 600px;
     border-radius: 10px;
     padding: 5px;
   }
 
   #wrapperadd {
-    margin-left: 50px;
-    margin-top: 25px;
+    margin: auto;
+    max-width: 800px;
   }
 
   #wrapperadd h1 {
@@ -368,7 +371,7 @@ footer a:hover {
     background-color: rgb(255, 103, 103);
     border: 1px solid black;
     border-radius: 25px;
-    width: 400px;
+    max-width: 400px;
     padding: 20px;
     font-weight: bold;
     margin-right: 25px;
@@ -380,7 +383,7 @@ footer a:hover {
     background-color: rgb(255, 103, 103);
     border: 1px solid black;
     border-radius: 25px;
-    width: 400px;
+    max-width: 400px;
     padding: 20px;
     font-weight: bold;
     margin-right: 25px;
@@ -396,7 +399,7 @@ footer a:hover {
   }
 
   #contactInfo input{
-    width: 600px;
+    max-width: 600px;
     padding: 10px;
     display: inline-block;
     border-radius: 10px;
@@ -409,7 +412,7 @@ footer a:hover {
   }
 
   #address input {
-    width: 600px;
+    max-width: 600px;
     padding: 10px;
     display: inline-block;
     border-radius: 10px;
@@ -422,14 +425,14 @@ footer a:hover {
   }
 
   #card input {
-    width: 600px;
+    max-width: 600px;
     padding: 10px;
     display: inline-block;
     border-radius: 10px;
   }
 
   #donateSubmit {
-    width: 250px;
+    max-width: 250px;
     height: 50px;
     margin-left: 10px;
     margin-bottom: 25px;
