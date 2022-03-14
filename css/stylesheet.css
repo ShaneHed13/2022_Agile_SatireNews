@@ -278,6 +278,9 @@ footer a:hover {
   }
   
   #loginForm input {
+    position: relative;
+    display: block;
+    margin-left: 20px;
     border-radius: 5px;
     font-size: 20px;
   }
@@ -290,8 +293,16 @@ footer a:hover {
   
   #loginForm label {
     padding: 20px;
+    text-align: center;
+    border-radius: 10px;
   }
   
+  #profileAboutMe {
+    margin-left: 20px;
+    width: 400px;
+    border-radius: 10px;
+  }
+
   #inputButton {
     width:100px;
     margin: 0 auto;

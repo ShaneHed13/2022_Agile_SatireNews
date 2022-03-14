@@ -7,6 +7,7 @@
       <title>Register</title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <link rel="stylesheet" href="css/stylesheet.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     </head>
 
     <body style="background-color:#E6E6E3" onload="welcome()">
@@ -25,10 +26,29 @@
 
       <div id="loginDiv">    
         <form id="loginForm"> 
-          <label for="userName">Username:</label>
-          <input id="regName" type="text" placeholder="Username" value=""/>
-          <label for="pass">Password:</label>
-          <input id="regPass" type="password" placeholder="Password" value=""/> 
+          <label for="userName">Username:</label><br>
+          <input id="regName" type="text" placeholder="Username" value=""/><br>
+          <label for="pass">Password:</label><br>
+          <input id="regPass" type="password" placeholder="Password" value=""/><br>
+          <label for="email">Email:</label><br>
+          <input type="email" id="email" name="email" placeholder="Email"/><br>
+          <label for="profile">Profile Image:</label><br>
+          <div id="imageContainer">
+            <image id="defaultImage" src="https://shanehed13.github.io/2022_Agile_SatireNews/images/defaultProfilePic.png"></image>
+            <input id="imageProfile" type="file" name="image_picture" required="" capture>
+          </div><br>
+          <label for="firstName">First Name:</label><br>
+          <input type="text" id="firstName" name="firstName" placeholder="First Name"/><br>
+          <label for="lastName">Last Name:</label><br>
+          <input type="text" id="lastName" name="lastName" placeholder="Last Name"/><br>
+          <label for="occupation">Occupation:</label><br>
+          <input type="text" id="occupation" name="occupation" placeholder="Occupation"/><br>
+          <label for="city">Current City:</label><br>
+          <input type="text" id="city" name="city" placeholder="City"/><br>
+          <label for="profileAboutMe">My Bio:</label><br>
+          <div id="aboutMeArea">
+            <textarea name="profileAboutMe" id="profileAboutMe" cols="20" rows="15"></textarea>
+          </div>
         </form>
         <div id="inputButton">
           <input id="btn_reg" type="submit" value="Register" onClick="register()"/>
@@ -44,6 +64,6 @@
 
     <script type="text/javascript" src="jquery-1.11.3.min.js"></script>
     <script type="text/javascript" language="javascript" src="login.js"></script>
-
+    <script src="profile.js"></script>
     </body>
 </html>
