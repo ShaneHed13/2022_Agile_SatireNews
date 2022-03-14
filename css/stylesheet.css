@@ -4,25 +4,14 @@
 /* Mobile */
 /* Media styles for login when page is less than 800px*/
 @media (max-width: 800px) {
-  #login input {
-    border-radius: 5px;
-    font-size: 20px;
-    width: 95%;
-    display: inline-block;
-    margin-right: 10px;
+  #loginForm input {
+	display: block; 
+	width: 90%;
+	margin-right: 25px;
   }
   
-  #login form {
-	  display: inline-block;
-  }
-  
-  #login label {
-    padding-top: 10px;
-    display: block;
-  }
-  
-  #login {
-	  width: 100%;
+  #loginForm label {
+	margin-left: 15px;
   }
   
 }
@@ -245,7 +234,6 @@ footer {
   padding: 5px;
   text-align: center;
   margin: auto;
-  max-width: 800px;
 }     
         
 footer a {
@@ -278,7 +266,6 @@ footer a:hover {
   
   #loginForm input {
     position: relative;
-    display: block;
     margin-left: 20px;
     border-radius: 5px;
     font-size: 20px;
@@ -291,7 +278,7 @@ footer a:hover {
   }
   
   #loginForm label {
-    padding: 20px;
+    padding: 10px;
     text-align: center;
     border-radius: 10px;
   }
