@@ -19,19 +19,18 @@
 
         <nav>
             <a href="index.html">Home</a>&nbsp;&bull;&nbsp;
-            <a href="addArticle.html">Add Article</a>&nbsp;&bull;&nbsp;
+            <a href="addArticle.html">Add Article</a>
             <a href="donate.html">Donate</a>&nbsp;&bull;&nbsp;
-            <a href="login.html">Member Login</a>&nbsp;&bull;&nbsp;
+            <a href="login.html">Member Login</a>
             <span id="loginSuccess"></span>
         </nav>
 
         <div id="options">
-            <label for="sort">Sort By:</label>
+            <label for="sort">Sort</label>
             <select name="sort" id="sort" onclick="sort_story()">
                 <option value="date">Date</option>
-            </select>&nbsp; &bull; &nbsp;
-            <input id="searchbar" onkeyup="search_story()" type="text" name="search" placeholder="Search">&nbsp; &bull; &nbsp;
-            <label for="subscribe">Subscribe For Updates:</label>
+            </select>&nbsp;
+            <input id="searchbar" onkeyup="search_story()" type="text" name="search" placeholder="Search">&nbsp;
 			<input for="subscribe" type="text" name="subscribe" id="subInput" placeholder="Subscription Email">
 			<button type="button" id="sub" onclick="sub()">Subscribe</button>&nbsp;   
         </div>

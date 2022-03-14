@@ -39,12 +39,11 @@
     padding: 40px;
     font-size: 25px;
     display: block;
-}git 
+} 
 
 /* Banner Code */
 
 h1 {
-  margin: auto;
   max-width: 800px;
 }
 
@@ -62,8 +61,8 @@ nav {
   border-radius: 3px 3px 0 0;
   font-family: open sans;
   margin: auto;
-  max-width: 800px;
-  text-align: center;
+  max-width: auto;
+  text-align: right;
   font-size: 125%;
   padding: 5px;
   text-decoration: none;
@@ -81,9 +80,9 @@ nav a:hover {
 #options {
   background-color: #FF6666;
   margin: auto;
-  max-width: 800px;
+  max-width: auto;
   padding: 5px;
-  text-align: center;
+  text-align: right;
 }
              
 /* Articles Code */
