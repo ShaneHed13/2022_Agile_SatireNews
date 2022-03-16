@@ -8,10 +8,11 @@
         <title>RFN</title>
         <script src="storyObject.js"></script>
         <script src="login.js"></script>
+		<script src="themeToggle.js"></script>
         <link rel="stylesheet" href="css/stylesheet.css">
     </head>
 
-    <body style="background-color:#E6E6E3" onload="welcome()">
+    <body id="body" style="background-color:#E6E6E3" onload="welcome()">
 
         <h1>
             <img src="images/RFNlogo.png" alt="RFN">
@@ -32,8 +33,12 @@
             </select>&nbsp;
             <input id="searchbar" onkeyup="search_story()" type="text" name="search" placeholder="Search">&nbsp;
 			<input for="subscribe" type="text" name="subscribe" id="subInput" placeholder="Subscription Email">
-			<button type="button" id="sub" onclick="sub()">Subscribe</button>&nbsp;   
-        </div>
+			<button type="button" id="sub" onclick="sub()">Subscribe</button>&nbsp;
+			<label for="dark_mode_toggle" onLoad="themeSwitch()">Theme:</label>
+			<button type="button" id="dark" onClick="darkMode()">Dark</button>
+			<button type="button" id="light" onClick="lightMode()">Light</button>
+			
+		</div>
 
         <div id="wrapper">
 
@@ -51,7 +56,7 @@
             <a href="donate.html">Donate</a>&nbsp; &bull;
             <a href="login.html">Member Login</a>&nbsp;
         </footer>
-    
+		<script src="darkMode.js"></script>
     <script src="index.js"></script>
     <script src="search.js"></script>
     <script src="sort.js"></script>

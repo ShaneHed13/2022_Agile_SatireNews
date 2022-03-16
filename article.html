@@ -6,10 +6,11 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>RFN</title>
         <script src="storyObject.js"></script>
+		<script src="themeToggle.js"></script>
         <link rel="stylesheet" href="css/stylesheet.css">
     </head>
   
-    <body style="background-color:#E6E6E3">
+    <body id="body" style="background-color:#E6E6E3">
     
         <h1>
             <img src="images/RFNlogo.png" alt="RFN">
@@ -23,12 +24,16 @@
             <a href="login.html">Member Login</a>&nbsp;&bull;&nbsp;
             <span id="loginSuccess"></span>
         </nav>
+		
 
         <div id="options">
             <label for="subscribe">Subscribe For Updates:</label>
 			<input for="subscribe" type="text" name="subscribe" id="subInput" placeholder="Subscription Email">
 			<button type="button" id="sub" onclick="sub()">Subscribe</button>&nbsp;   
-        </div>
+			<label for="dark_mode_toggle" onLoad="themeSwitch()">Theme:</label>
+			<button type="button" id="dark" onClick="darkMode()">Dark</button>
+			<button type="button" id="light" onClick="lightMode()">Light</button>
+		</div>
 
         <div id="wrapper">
 
@@ -97,7 +102,7 @@
             <a href="donate.html">Donate</a>&nbsp; &bull;
             <a href="login.html">Member Login</a>&nbsp;
         </footer>
-    
+		<script src="darkMode.js"></script>
         <script src="article.js"></script>
         <script src="comment.js"></script>
     </body>
