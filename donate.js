@@ -88,7 +88,7 @@ function totalOneTime() {
   return oneTimeDonoTotal
 }
 
-//Send confomation email
+//Send confirmation email
 function sendConfirmationEmail() {
   //accesses Simple Mail Transfer Protocol to send email through gmail
     Email.send({
@@ -121,9 +121,9 @@ function submitThanks() {
   var currentCity = document.getElementById("city");
   var profileAboutMe = document.getElementById("profileAboutMe"); 
   
-  if  (username.value === "" || email.value === "" || npassword.value === "" || cpassword.value === ""
-  || firstName.value === "" || lastName.value === "" || occupation.value === "" || currentCity.value === ""
-  || profileAboutMe.value === "") {
+  if  (username.value == "" || email.value == "" || npassword.value === "" || cpassword.value === ""
+  || firstName.value == "" || lastName.value == "" || occupation.value == "" || currentCity.value == ""
+  || profileAboutMe.value == "") {
     alert("Please fill out each field.");
   } 
-}
+} 
