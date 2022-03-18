@@ -62,5 +62,4 @@
       author: "Shane Hedrington",
       article: "Gandalf article"
     },
-  ];
-git 
+  ]; 

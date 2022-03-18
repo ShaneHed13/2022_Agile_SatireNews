@@ -66,7 +66,7 @@
             <br>
             <h3>Comments</h3>
 
-            <form>
+            <form action="/comment_storage.php" method="post">
                 <label for="name">Name: </label>
                 <input type="text" name="name" id="name" style="width: 6em;">
                 <label for="comment">Comment: </label>
@@ -80,7 +80,7 @@
             
             <br>
             <h3>Contact author</h3>
-            <form>
+            <form action="mailto:RFNauthors@example.com" method="post">
                 <label for="name">Name:</label>
                 <input type="text" name="name" id="nameMsg" style="width: 6em;">
                 <label for="email">Email:</label>
@@ -88,7 +88,7 @@
                 <br>
                 <label for="message">Message:</label>
                 <br>
-                <textarea name="message" id="messageMsg" cols="46" rows="8" style="padding: 5px;"></textarea>
+                <textarea name="message" id="messageMsg" cols="40" rows="8" style="padding: 5px;"></textarea>
                 <br>
                 <input type="submit" id="submitMsg" value="Send" onclick="sendMessage()">
                 <br>
