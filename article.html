@@ -45,18 +45,24 @@
             <p class="p1">Rate this article:</p>
 
             <div class="rating">
-                <input type ="radio" name="rating" value="5" id="5">
+                <input type ="radio" name="rating" value="5" id="5" onclick="starSound()">
                 <label for="5">☆</label>
-                <input type ="radio" name="rating" value="4" id="4">
+                <input type ="radio" name="rating" value="4" id="4" onclick="starSound()">
                 <label for="4">☆</label>
-                <input type ="radio" name="rating" value="3" id="3">
+                <input type ="radio" name="rating" value="3" id="3" onclick="starSound()">
                 <label for="3">☆</label>
-                <input type ="radio" name="rating" value="2" id="2">
+                <input type ="radio" name="rating" value="2" id="2" onclick="starSound()">
                 <label for="2">☆</label>
-                <input type ="radio" name="rating" value="1" id="1">
+                <input type ="radio" name="rating" value="1" id="1" onclick="starSound()">
                 <label for="1">☆</label>
             </div>
             <br>
+            <!-- Ratings Audio -->
+            <audio id="cheer" src="audio/cheer.mp3"></audio>
+            <audio id="tinyLaugh" src="audio/toddlerLaugh.mp3"></audio>
+            <audio id="chuckle" src="audio/babyChuckle.mp3"></audio>
+            <audio id="boo" src="audio/boo.mp3"></audio>
+            <audio id="sigh" src="audio/sigh.mp3"></audio>
 
             <!--Share Buttons-->
             <a href="mailto:?subject=Article Title Place Holder&body=https://shanehed13.github.io/2022_Agile_SatireNews/article.html" class="share-btn email">Email</a>

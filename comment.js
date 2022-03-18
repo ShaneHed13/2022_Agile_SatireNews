@@ -59,3 +59,36 @@ function sendMessage() {
 	}
 	
 }
+
+// Audio interactions
+
+function starSound() {
+
+	var cheer = document.getElementById("cheer");
+	var tinyLaugh = document.getElementById("tinyLaugh");
+	var chuckle = document.getElementById("chuckle");
+	var sigh = document.getElementById("sigh");
+	var boo = document.getElementById("boo");
+
+	document.getElementById(5).addEventListener('click', function() {
+		cheer.play();
+	});
+
+	document.getElementById(4).addEventListener('click', function() {
+		tinyLaugh.play();
+	});
+
+	document.getElementById(3).addEventListener('click', function() {
+		chuckle.play();
+	});
+
+	document.getElementById(2).addEventListener('click', function() {
+		sigh.play();
+	});
+
+	document.getElementById(1).addEventListener('click', function() {
+		boo.play();
+	});
+	
+}
+
