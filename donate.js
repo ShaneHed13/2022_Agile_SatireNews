@@ -109,7 +109,7 @@ function sendConfirmationEmail() {
   }
 //Check for empty strings
 //Thank you message for submitting information
-function submitThanks() {
+/*function submitThanks() {
 
   var username = document.getElementById("username");
   var email = document.getElementById("email");
@@ -126,4 +126,4 @@ function submitThanks() {
   || profileAboutMe.value == "") {
     alert("Please fill out each field.");
   } 
-} 
+} */ //Interfered with the function of the smtp email.
