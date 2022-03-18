@@ -7,6 +7,8 @@
   <title>Donate</title>
   <link rel="stylesheet" href="css/stylesheet.css">
   <script src="themeToggle.js"></script>
+  <script src=
+  "https://smtpjs.com/v3/smtp.js"></script>
 
 </head>
 <body id="body" style="background-color:#E6E6E3">
@@ -35,17 +37,17 @@
 
 <div id="donoAmountMonthly">
   <p>Donate each month:</p><br>
-  <input type="checkbox" name="monthly" id="mdollar_one" value="dono1">
+  <input type="checkbox" name="monthly" id="mdollar_one" value=1>
   <label for="mdollar_one">$1</label>
-  <input type="checkbox" name="monthly" id="mdollar_five" value="dono2">
+  <input type="checkbox" name="monthly" id="mdollar_five" value=5>
   <label for="mdollar_five">$5</label>
-  <input type="checkbox" name="monthly" id="mdollar_ten" value="dono3">
+  <input type="checkbox" name="monthly" id="mdollar_ten" value=10>
   <label for="mdollar_ten">$10</label>
-  <input type="checkbox" name="monthly" id="mdollar_twenty" value="dono4">
+  <input type="checkbox" name="monthly" id="mdollar_twenty" value=20>
   <label for="mdollar_twenty">$20</label>
-  <input type="checkbox" name="monthly" id="mdollar_fifty" value="dono5">
+  <input type="checkbox" name="monthly" id="mdollar_fifty" value=50>
   <label for="mdollar_fifty">$50</label>
-  <input type="checkbox" name="monthly" id="mdollar_hundred" value="dono6">
+  <input type="checkbox" name="monthly" id="mdollar_hundred" value=100>
   <label for="mdollar_hundred">$100</label><br>
   <label for="monthlyCustom">Custom Amount:</label><br>
   <input type="text" id="monthlyCustom"><br>
@@ -54,17 +56,17 @@
 
   <div id="donoAmountOnce">
     <p>Donate one time:</p><br>
-    <input type="checkbox" name="once" id="odollar_one" value="dono7">
+    <input type="checkbox" name="once" id="odollar_one" value=1>
     <label for="odollar_one">$1</label>
-    <input type="checkbox" name="once" id="odollar_five" value="dono8">
+    <input type="checkbox" name="once" id="odollar_five" value=5>
     <label for="odollar_five">$5</label>
-    <input type="checkbox" name="once" id="odollar_ten" value="dono9">
+    <input type="checkbox" name="once" id="odollar_ten" value=10>
     <label for="odollar_ten">$10</label>
-    <input type="checkbox" name="once" id="odollar_twenty" value="dono10">
+    <input type="checkbox" name="once" id="odollar_twenty" value=20>
     <label for="odollar_twenty">$20</label>
-    <input type="checkbox" name="once" id="odollar_fifty" value="dono11">
+    <input type="checkbox" name="once" id="odollar_fifty" value=50>
     <label for="odollar_fifty">$50</label>
-    <input type="checkbox" name="once" id="odollar_hundred" value="dono12">
+    <input type="checkbox" name="once" id="odollar_hundred" value=100>
     <label for="odollar_hundred">$100</label><br>
     <label for="onceCustom">Custom Amount:</label><br>
     <input type="text" id="onceCustom"><br>
@@ -116,7 +118,7 @@
     <input type="text" id="ccv" name="ccv">
   </div>
 
-  <input type="submit" id="donateSubmit" value="Submit">
+  <input type="submit" id="donateSubmit" value="Submit" onclick="sendConfirmationEmail()">
 
 </div>
 
