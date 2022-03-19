@@ -4,8 +4,8 @@
 //Simple Mail Transfer Protocol Variables
 var password = "agiletest" 
 var senderEmail = "j16168001@gmail.com"
-var recieverEmail = document.getElementById('email').value
-var senderName = document.getElementById('name').value
+var recieverEmail = document.getElementById('email')
+var senderName = document.getElementById('name')
 
 //Donate once
 var oneTimeDono1 = document.getElementById("odollar_one")
@@ -14,7 +14,7 @@ var oneTimeDono10 = document.getElementById("odollar_ten")
 var oneTimeDono20 = document.getElementById("odollar_twenty")
 var oneTimeDono50 = document.getElementById("odollar_fifty")
 var oneTimeDono100 = document.getElementById("odollar_hundred")
-var customOneTimeDono = document.getElementById("onceCustom").value
+var customOneTimeDono = document.getElementById("onceCustom")
 
 //Donate monthly
 var monthDono1 = document.getElementById("mdollar_one")
@@ -23,7 +23,7 @@ var monthDono10 = document.getElementById("mdollar_ten")
 var monthDono20 = document.getElementById("mdollar_twenty")
 var monthDono50 = document.getElementById("mdollar_fifty")
 var monthDono100 = document.getElementById("mdollar_hundred")
-var customMonthDono = document.getElementById("monthlyCustom").value
+var customMonthDono = document.getElementById("monthlyCustom")
 
 //Donation Totals
 //One Time
@@ -31,7 +31,6 @@ var oneTimeDonoTotal = 0
 
 //Monthly
 var monthlyDonationAmount = 0
-
 
 //Functions
 function totalMonthly() {
@@ -53,9 +52,9 @@ function totalMonthly() {
   if (monthDono100.checked) {
     monthlyDonationAmount += parseInt(monthDono100.value)
   } 
-  if (customMonthDono != "") {
-    if (isNaN(parseInt(customMonthDono)) == false) {
-      monthlyDonationAmount += parseInt(customMonthDono)
+  if (customMonthDono.value != "") {
+    if (isNaN(parseInt(customMonthDono.value)) == false) {
+      monthlyDonationAmount += parseInt(customMonthDono.value)
     } 
   }
   return monthlyDonationAmount
@@ -80,9 +79,9 @@ function totalOneTime() {
   if (oneTimeDono100.checked) {
     oneTimeDonoTotal += parseInt(oneTimeDono100.value)
   } 
-  if (customOneTimeDono != "") {
-    if (isNaN(parseInt(customOneTimeDono)) == false) {
-      oneTimeDonoTotal += parseInt(customOneTimeDono)
+  if (customOneTimeDono.value != "") {
+    if (isNaN(parseInt(customOneTimeDono.value)) == false) {
+      oneTimeDonoTotal += parseInt(customOneTimeDono.value)
     } 
   }
   return oneTimeDonoTotal
@@ -95,10 +94,10 @@ function sendConfirmationEmail() {
       Host: "smtp.gmail.com",
       Username: senderEmail,  
       Password: password,
-      To: recieverEmail,
+      To: recieverEmail.value,
       From: senderEmail,
       Subject: "Donation Confirmation",
-      Body: "Thank you " + senderName + " for your generous donation! This is confirming your donation of " 
+      Body: "Thank you " + senderName.value + " for your generous donation! This is confirming your donation of " 
       + totalMonthly() + " a month and " 
       + totalOneTime() + " to be donated one time.",
     })
